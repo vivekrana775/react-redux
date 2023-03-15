@@ -2,12 +2,20 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { selectedProducts } from "../redux/actions/action";
+import { selectedProducts, Add_Item_To_Cart } from "../redux/actions/action";
+import { Add_Item } from "./../redux/actions/action";
 
 const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products);
   const selectedItem = useSelector((state) => state.selectedProduct);
+  const total_price = useSelector((state) => state.allProducts.total_price);
+
   const dispatch = useDispatch();
+
+  const button_function = (x, y) => {
+    dispatch(Add_Item(x));
+    dispatch(Add_Item_To_Cart(y));
+  };
 
   const renderList = products.map((product) => {
     return (
@@ -28,8 +36,16 @@ const ProductComponent = () => {
               </div>
             </div>
           </div>
-          <button>GO</button>
         </Link>
+        <div>
+          {/* <button
+            onClick={() => {
+              button_function(product.price, product);
+            }}
+          >
+            Add to Cart
+          </button> */}
+        </div>
       </div>
     );
   });

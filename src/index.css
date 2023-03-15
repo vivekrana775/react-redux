@@ -15,3 +15,28 @@ code {
   margin: 50px;
   padding: 10px;
 }
+.cart_div{
+  max-width: 100px;
+  max-height: 100px;
+  position: relative;
+  
+  top: 20%;
+}
+.cart_img {
+  max-width: 100px;
+  max-height: 100px;
+  position: relative;
+  top: 0rem;
+  left: 30rem;
+}
+.items_value{
+  position: relative;
+  top: -24rem;
+}
+.ui.grid.container {
+  width: calc(950px + 2rem)!important;
+}
+.reduce_item_by_1{
+  position: relative;
+  bottom: 25rem;
+}

@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.total_Price{
+
+  position: relative;
+  display: flex;
+  
+  top: 5rem;
+  bottom: -10rem;
+  
+}
+.total_price_details{
+  position: relative;
+  top: 20rem;
+  left:10rem
+
+}

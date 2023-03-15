@@ -1,0 +1,7 @@
+{
+      id: 1,
+      image: "https://thumbs.dreamstime.com/z/baby-shoes-14348389.jpg",
+      title: "Shoe",
+      price: 100,
+      category: "Shoe",
+    },
